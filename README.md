@@ -6,6 +6,7 @@
 - It can kick all the members of the server (but that piece of command can only be executed by thr person who is owner of the server.)
 - It can join vc as well as can leave the vc (voice chats) and can play multiple songs of your choice.
 - It can display the avatar of the person who is mentioned.
+- It can delete several messages as per your command
 # How to use the Bot
 - Prefix of the bot is ```!!```
 - You can kick all by ```!!kickall```
@@ -14,3 +15,4 @@
 - You can play music by ```!!play (link of the song you want it to play from youtube.)```
 - You can ask for help by ```!!help```
 - You can ask for avatar pic of somebody by ```!!av @mention_the_user```
+- You can delete several messages by ```!!clear (amount)```
