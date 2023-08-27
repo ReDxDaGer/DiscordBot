@@ -57,24 +57,6 @@ async def help(ctx):
     # embed = discord.Embed(title="Help",
     #                       description=f"This bot is a multi utiliy bot which also helps in moderation playing music and most of the work can be donned i can also chat with people of the server!! ",
     #                       color=0x7615D1)
-@bot.command(name="help Owner")
-async def help(ctx):
-    bot_name = ctx.bot.user.name
-    bot_avatar = ctx.bot.user.avatar.url if ctx.bot.user.avatar else ctx.bot.user.default_avatar.url
-
-    embed = discord.Embed(title=bot_name, color=discord.Color.blue())
-    embed.set_author(name=bot_name, icon_url=bot_avatar)
-    embed.set_footer(text=f"Use `{ctx.prefix}help Owner` This category can only be access by the owner.")
-
-    embed.description = f"My prefix for this server is `{ctx.prefix}`.\nType `{ctx.prefix}help <category_name>` for more info on a command.\n"
-
-    embed.add_field(name="Categories", value="• <:ban:1138576980640542880> Banall\n• :leg: kickall\n• :☢️: nuke", inline=True)
-
-    bot_info = f"Bot ID: {ctx.bot.user.id}\n"
-    bot_info += f"Bot Owner: <@920601420812660746>\n"
-    embed.add_field(name="Bot Info", value=bot_info, inline=True)
-
-    await ctx.send(embed=embed)
 
 #ping command
 @bot.command(name="ping")
