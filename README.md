@@ -1,3 +1,7 @@
+
+<img align = "centre" src = "https://cdn.dribbble.com/users/339280/screenshots/17754146/media/c6dad0457dc5f3ba9d248203318d831b.png?resize=1000x750&vertical=center" />
+
+
 # DiscordBot
 - This bot is made for ease to manage the server easily, it is a multi utility bot which can help you and your discord server in several ways .
 # Features
@@ -7,6 +11,9 @@
 - It can join vc as well as can leave the vc (voice chats) and can play multiple songs of your choice.
 - It can display the avatar of the person who is mentioned.
 - It can delete several messages as per your command
+
+
+
 # How to use the Bot
 - Prefix of the bot is ```!!```
 - You can kick all by ```!!kickall```
