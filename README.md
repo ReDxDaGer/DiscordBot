@@ -23,3 +23,19 @@
 - You can ask for help by ```!!help```
 - You can ask for avatar pic of somebody by ```!!av @mention_the_user```
 - You can delete several messages by ```!!clear (amount)```
+
+# Installation
+Clone the repo
+```git clone https://github.com/ReDxDaGer/DiscordBot``` 
+- Method-1: Python setup
+```bash
+cd DiscordBot
+pip install -r requirements.txt
+python3 main.py
+```
+
+- Method-2: Docker setup
+```
+docker build . -t discordbot
+docker run -it discordbot
+```
