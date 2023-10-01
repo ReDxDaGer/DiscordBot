@@ -136,7 +136,7 @@ async def clear(ctx, amount=0):
         await asyncio.sleep(6)
         await fail.delete()
 
-    if amount < 50:
+    if amount < 100:
         await ctx.channel.purge(limit=amount)
         sucess = await ctx.send(f"{amount} messages has been deleted :white_check_mark: ")  # sending success msg
         await asyncio.sleep(6)  # wait 6 seconds
@@ -157,6 +157,8 @@ async def av(ctx, *, avamember: discord.Member = None):
     em.set_author(name=f"{avamember}")
     em.set_footer(text=f'Requested by {ctx.message.author}')
     await ctx.send(embed=em)
+
+    
 #Nuke
 @bot.command()
 @commands.has_permissions(administrator = True)

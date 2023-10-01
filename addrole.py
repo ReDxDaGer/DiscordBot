@@ -1,3 +1,4 @@
+# This part of code is still under development please don't use this now!!
 import discord
 from discord.ext import commands
 @commands.command()

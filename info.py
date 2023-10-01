@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-
+# This command provides the info of the bot that in how many server the bot is in and how many members in total it is watching
 @commands.command(name='si', description='Get information about the server')
 async def si(ctx):
     guild = ctx.guild
