@@ -26,7 +26,10 @@
 
 # Installation
 Clone the repo
-```git clone https://github.com/ReDxDaGer/DiscordBot``` 
+```git clone https://github.com/ReDxDaGer/DiscordBot```
+
+Setup: Add your `openai` API key and Discord bot token in a file named `.env` inside the directory
+
 - Method-1: Python setup
 ```bash
 cd DiscordBot
