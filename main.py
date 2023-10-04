@@ -30,6 +30,23 @@ bot.add_command(uptime)
 bot.add_command(addrole)
 bot.add_command(play)
 
+openai.api_key = os.getenv('openai') #needs openai token
+completion = openai.Completion()
+
+def Reply(question):
+  prompt = f'You: {question}\n Bot: '
+  response = completion.create(prompt=prompt,
+                               engine="text-davinci-003", 
+                               stop=['\You'],
+                               max_tokens=200)
+  answer = response.choices[0].text.strip()
+  return answer
+
+#ai chatbot function
+@bot.command()
+async def l(ctx, *, question):
+   await ctx.send(Reply(question))
+
 
 # bot.add_command(play_song)
 @bot.command(name="hello")
@@ -179,5 +196,9 @@ async def nuke(ctx, channel: discord.TextChannel = None):
 
     else:
         await ctx.send(f"No channel named {channel.name} was found!")
+
+
+
+
 
 bot.run(os.getenv('TOKEN'))
