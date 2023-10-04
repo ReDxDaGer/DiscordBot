@@ -12,6 +12,7 @@ from uptime import uptime
 from addrole import addrole
 from banall import kickall
 from banall import banall
+from music import play
 
 load_dotenv()
 
@@ -27,6 +28,7 @@ bot.add_command(leave)
 bot.add_command(si)
 bot.add_command(uptime)
 bot.add_command(addrole)
+bot.add_command(play)
 
 
 # bot.add_command(play_song)
