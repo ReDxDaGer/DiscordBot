@@ -2,9 +2,11 @@ import discord
 from discord.ext import commands
 from kick import kick
 import os
+import openai
 from dotenv import load_dotenv
 from vc import join
 from vc import leave
+from openai import api_key
 import nacl
 import asyncio
 from info import si
@@ -12,7 +14,7 @@ from uptime import uptime
 from addrole import addrole
 from banall import kickall
 from banall import banall
-from music import play
+# from music import play
 
 load_dotenv()
 
@@ -28,7 +30,7 @@ bot.add_command(leave)
 bot.add_command(si)
 bot.add_command(uptime)
 bot.add_command(addrole)
-bot.add_command(play)
+# bot.add_command(play)
 
 openai.api_key = os.getenv('openai') #needs openai token
 completion = openai.Completion()
