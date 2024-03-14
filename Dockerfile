@@ -1,8 +1,7 @@
-FROM ubuntu:20.04
+FROM python:3.9-alpine
 WORKDIR /app/
-RUN apt-get update
-RUN apt-get install -y python3 python3-pip
 COPY ./requirements.txt . 
+RUN apk update
 RUN pip install -r requirements.txt
 COPY . . 
 CMD ["python3","./main.py"]
